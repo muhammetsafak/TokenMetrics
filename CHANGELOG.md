@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2026-11-08
+
 ### Added
 
 - Usage collection from Claude Code, Codex CLI and Gemini CLI logs, and from the
@@ -21,4 +23,5 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Manual entry, CSV import, and JSON and CSV export.
 - Admin API keys stored in the OS keychain.
 
-[Unreleased]: https://github.com/muhammetsafak/TokenMetrics/commits/main
+[Unreleased]: https://github.com/muhammetsafak/TokenMetrics/compare/v0.1.0...HEAD
+[0.1.0]: https://github.com/muhammetsafak/TokenMetrics/releases/tag/v0.1.0
