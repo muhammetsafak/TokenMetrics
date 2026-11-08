@@ -1,0 +1,9 @@
+{"sessionId":"sess-a-0001","projectHash":"proj-a","startTime":"2026-11-01T10:00:00.000Z","lastUpdated":"2026-11-01T10:00:00.000Z","kind":"main"}
+{"id":"u1","timestamp":"2026-11-01T10:00:01.000Z","type":"user","content":[{"text":"..."}]}
+{"id":"g1","timestamp":"2026-11-01T10:00:05.000Z","type":"gemini","content":"","thoughts":[],"tokens":null,"model":"gemini-3-pro","toolCalls":[{"id":"c1","name":"read_file","args":{},"status":"success","timestamp":"2026-11-01T10:00:05.000Z"}]}
+{"id":"g1","timestamp":"2026-11-01T10:00:05.000Z","type":"gemini","content":"","thoughts":[],"tokens":{"input":1000,"output":200,"cached":400,"thoughts":100,"tool":50,"total":1350},"model":"gemini-3-pro","toolCalls":[{"id":"c1","name":"read_file","args":{},"status":"success","timestamp":"2026-11-01T10:00:05.000Z"}]}
+{"$set":{"lastUpdated":"2026-11-01T10:00:06.000Z"}}
+{"id":"g2","timestamp":"2026-11-01T10:01:00.000Z","type":"gemini","content":"...","thoughts":[],"tokens":{"input":2000,"output":300,"cached":0,"thoughts":0,"tool":0,"total":2300},"model":"gemini-3-flash"}
+{"$patch":{"id":"g2","content":"..."}}
+{"$rewindTo":"g2"}
+{"id":"g3","timestamp":"2026-11-01T10:02:00.000Z","type":"gemini","content":"...","thoughts":[],"tokens":null,"model":"gemini-3-flash"}

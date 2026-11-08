@@ -1,0 +1,214 @@
+/*
+ * Form and list styles shared by the settings and data screens. Built only
+ * from the tokens in style.css; the control look mirrors the date inputs of
+ * the filter bar.
+ */
+
+.field {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  align-content: start;
+}
+
+.field > label,
+.field > .label {
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-2);
+}
+
+.field .hint {
+  font-size: 0.78rem;
+  color: var(--text-3);
+}
+
+.field input:not([type='checkbox']):not([type='radio']),
+.field select {
+  width: 100%;
+  min-height: 40px;
+  padding: 0 12px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  color: var(--text);
+  color-scheme: light dark;
+}
+
+.field input::placeholder {
+  color: var(--text-3);
+}
+
+.field input[aria-invalid='true'] {
+  border-color: var(--critical);
+}
+
+.field input:disabled,
+.field select:disabled {
+  opacity: 0.6;
+}
+
+/* Responsive grid of fields. */
+.fields {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: 12px;
+}
+
+.fields.wide {
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Checkbox or radio next to its label text. */
+.check {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 28px;
+}
+
+.check input {
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+.btn-danger {
+  border-color: var(--critical);
+  color: var(--critical-text);
+}
+
+.btn-small {
+  min-height: 28px;
+  padding: 0 10px;
+  font-size: 0.85rem;
+}
+
+/* Message boxes. Meaning is carried by the text and the icon, not by color alone. */
+.callout {
+  display: flex;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid var(--border-strong);
+  border-left-width: 4px;
+  border-radius: var(--radius-sm);
+  background: var(--surface-2);
+  font-size: 0.88rem;
+}
+
+.callout > :first-child {
+  flex: none;
+}
+
+.callout p + p {
+  margin-top: 4px;
+}
+
+.callout.warn {
+  border-color: var(--serious);
+}
+
+.callout.error {
+  border-color: var(--critical);
+}
+
+.callout.ok {
+  border-color: var(--good);
+}
+
+.callout .body {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Plain data table in its own scroll container (same look as DataTable). */
+.table-scroll {
+  position: relative; /* keeps .sr-only children inside the scroll area */
+  overflow-x: auto;
+}
+
+.table-scroll table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 13px;
+}
+
+.table-scroll th,
+.table-scroll td {
+  padding: 10px 12px;
+  text-align: left;
+  border-bottom: 1px solid var(--border);
+  white-space: nowrap;
+  vertical-align: middle;
+}
+
+.table-scroll tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+.table-scroll tbody tr:hover > td {
+  background: var(--hover);
+}
+
+.table-scroll thead th {
+  font-size: 12px;
+  font-weight: 500;
+  color: var(--text-3);
+}
+
+.table-scroll .num {
+  text-align: right;
+}
+
+.table-scroll th.num {
+  font-family: var(--font);
+}
+
+.table-scroll .wrap {
+  white-space: normal;
+  overflow-wrap: anywhere;
+  min-width: 12ch;
+}
+
+.table-scroll td.row-actions {
+  text-align: right;
+}
+
+.table-scroll td.row-actions .actions {
+  justify-content: flex-end;
+  flex-wrap: nowrap;
+}
+
+.pill {
+  display: inline-block;
+  padding: 1px 8px;
+  border: 1px solid var(--border-strong);
+  border-radius: 999px;
+  color: var(--text-2);
+  font-size: 0.75rem;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.pill.on {
+  border-color: var(--good);
+  color: var(--text);
+}
+
+.pill.warn {
+  border-color: var(--serious);
+  color: var(--text);
+}
+
+.mono {
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+}

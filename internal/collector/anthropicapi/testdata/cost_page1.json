@@ -1,0 +1,39 @@
+{
+  "data": [
+    {
+      "starting_at": "2026-11-05T00:00:00Z",
+      "ending_at": "2026-11-06T00:00:00Z",
+      "results": [
+        {
+          "amount": "250.5",
+          "currency": "USD",
+          "cost_type": "tokens",
+          "description": "Claude Opus 5.5 Usage - Input Tokens",
+          "model": "claude-opus-5-5",
+          "token_type": "uncached_input_tokens",
+          "workspace_id": "wrkspc_01ABC"
+        },
+        {
+          "amount": "100",
+          "currency": "USD",
+          "cost_type": "tokens",
+          "description": "Claude Opus 5.5 Usage - Output Tokens",
+          "model": "claude-opus-5-5",
+          "token_type": "output_tokens",
+          "workspace_id": "wrkspc_01ABC"
+        },
+        {
+          "amount": "30",
+          "currency": "USD",
+          "cost_type": "web_search",
+          "description": "Web search usage",
+          "model": null,
+          "token_type": null,
+          "workspace_id": null
+        }
+      ]
+    }
+  ],
+  "has_more": false,
+  "next_page": null
+}

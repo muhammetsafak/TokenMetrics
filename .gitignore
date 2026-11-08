@@ -1,0 +1,42 @@
+# Single source of truth lives in the separate private TokenMetrics.ssot repository
+/.ssot/
+
+# Build output
+build/bin/
+frontend/dist/
+
+# Node
+frontend/node_modules/
+npm-debug.log*
+
+# Go
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.*
+go.work
+go.work.sum
+
+# Env / secrets
+.env
+.env.*
+!.env.example
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+*.swp
+
+# Wails artifact
+*.syso
+frontend/package.json.md5

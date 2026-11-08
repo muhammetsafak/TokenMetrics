@@ -1,0 +1,19 @@
+{
+  "$schema": "https://wails.io/schemas/config.v2.json",
+  "name": "TokenMetrics",
+  "outputfilename": "tokenmetrics",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Muhammet Şafak",
+    "email": "104234499+muhammetsafak@users.noreply.github.com"
+  },
+  "info": {
+    "companyName": "Muhammet Şafak",
+    "productName": "TokenMetrics",
+    "copyright": "Copyright (c) 2026 Muhammet Şafak. Licensed under GPL-3.0-only.",
+    "comments": "https://github.com/muhammetsafak/TokenMetrics"
+  }
+}

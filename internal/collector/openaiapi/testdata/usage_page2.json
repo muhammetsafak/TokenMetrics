@@ -1,0 +1,23 @@
+{
+  "object": "page",
+  "data": [
+    {
+      "object": "bucket",
+      "start_time": 1793923200,
+      "end_time": 1794009600,
+      "results": [
+        {
+          "object": "organization.usage.completions.result",
+          "input_tokens": 40,
+          "input_cached_tokens": 0,
+          "output_tokens": 20,
+          "num_model_requests": 1,
+          "project_id": "proj_alpha",
+          "model": "gpt-5-mini"
+        }
+      ]
+    }
+  ],
+  "has_more": false,
+  "next_page": null
+}

@@ -1,0 +1,13 @@
+# Normalize line endings to LF for all text files
+* text=auto eol=lf
+
+# Binary files
+*.png    binary
+*.ico    binary
+*.icns   binary
+*.woff2  binary
+
+# Generated files (collapsed in diffs, excluded from language stats)
+go.sum                      linguist-generated
+frontend/package-lock.json  linguist-generated
+frontend/wailsjs/**         linguist-generated
